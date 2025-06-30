@@ -48,7 +48,7 @@ exports.googleCallback = async (req, res) => {
     );
 
     res.redirect(
-      `http://localhost:5173?token=${token}&user=${encodeURIComponent(
+      `https://frontend-mmmv.onrender.com?token=${token}&user=${encodeURIComponent(
         JSON.stringify(user)
       )}`
     );
